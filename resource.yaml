@@ -10,4 +10,4 @@ spec:
   replicas: 1
   image: nginx:alpine
   ingress:
-    enabled: true
+    enabled: false
