@@ -2,6 +2,8 @@ apiVersion: kro.run/v1alpha1
 kind: ResourceGraphDefinition
 metadata:
   name: my-application
+  annotations:
+    argocd.argoproj.io/sync-wave: "-1"
 spec:
   # kro uses this simple schema to create your CRD schema and apply it
   # The schema defines what users can provide when they instantiate the RGD (create an instance).
